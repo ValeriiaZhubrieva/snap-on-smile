@@ -1,0 +1,63 @@
+<svg width="393" height="6020" viewBox="0 0 393 6020" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="393" height="6020" fill="#EBEFFF"/>
+<g clip-path="url(#clip0_4002_81)">
+<rect width="393" height="852" fill="#EBEFFF"/>
+<circle cx="196.5" cy="509.5" r="284.5" fill="#C1CAF4"/>
+<circle cx="362.5" cy="550.5" r="225" stroke="#1935CA" stroke-opacity="0.3"/>
+<circle cx="53.5" cy="774.5" r="31" fill="#EBEFFF" stroke="#C1CAF4"/>
+<circle cx="73" cy="755" r="20" fill="#E2DFFC"/>
+</g>
+<g clip-path="url(#clip1_4002_81)">
+<rect width="393" height="1182" transform="translate(0 852)" fill="#EBEFFF"/>
+<circle opacity="0.7" cx="209" cy="209" r="209" transform="matrix(-1 0 0 1 550 984)" fill="#E2DFFC"/>
+</g>
+<g clip-path="url(#clip2_4002_81)">
+<rect width="393" height="959" transform="translate(0 2034)" fill="#EBEFFF"/>
+<circle opacity="0.7" cx="196" cy="2453" r="285" fill="#C1CAF4"/>
+</g>
+<g clip-path="url(#clip3_4002_81)">
+<rect width="393" height="485" transform="translate(0 3983)" fill="#EBEFFF"/>
+<circle opacity="0.5" cx="-42.5" cy="4217.5" r="220.5" fill="#C1CAF4"/>
+<circle opacity="0.7" cx="-64" cy="4236" r="187" fill="#F5F7FF"/>
+</g>
+<g clip-path="url(#clip4_4002_81)">
+<rect width="393" height="761" transform="translate(0 4468)" fill="#EBEFFF"/>
+<circle opacity="0.7" cx="393" cy="4894" r="325" fill="#C1CAF4"/>
+<circle opacity="0.7" cx="353.5" cy="4893.5" r="333.5" fill="#F5F7FF"/>
+</g>
+<g clip-path="url(#clip5_4002_81)">
+<rect width="393" height="791" transform="translate(0 5229)" fill="#EBEFFF"/>
+<circle opacity="0.7" cx="75" cy="5736" r="47" fill="#C1CAF4"/>
+<circle opacity="0.7" cx="47" cy="47" r="47" transform="matrix(-1 0 0 1 408 5332)" fill="#C1CAF4"/>
+<circle cx="38" cy="5699" r="37" fill="#E2DFFC"/>
+<circle cx="37" cy="37" r="37" transform="matrix(-1 0 0 1 435 5305)" fill="#E2DFFC"/>
+</g>
+<g clip-path="url(#clip6_4002_81)">
+<rect width="393" height="990" transform="translate(0 2993)" fill="#EBEFFF"/>
+<circle opacity="0.7" cx="57" cy="3320" r="47" fill="#C1CAF4"/>
+<circle cx="20" cy="3283" r="37" fill="#E2DFFC"/>
+</g>
+<defs>
+<clipPath id="clip0_4002_81">
+<rect width="393" height="852" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4002_81">
+<rect width="393" height="1182" fill="white" transform="translate(0 852)"/>
+</clipPath>
+<clipPath id="clip2_4002_81">
+<rect width="393" height="959" fill="white" transform="translate(0 2034)"/>
+</clipPath>
+<clipPath id="clip3_4002_81">
+<rect width="393" height="485" fill="white" transform="translate(0 3983)"/>
+</clipPath>
+<clipPath id="clip4_4002_81">
+<rect width="393" height="761" fill="white" transform="translate(0 4468)"/>
+</clipPath>
+<clipPath id="clip5_4002_81">
+<rect width="393" height="791" fill="white" transform="translate(0 5229)"/>
+</clipPath>
+<clipPath id="clip6_4002_81">
+<rect width="393" height="990" fill="white" transform="translate(0 2993)"/>
+</clipPath>
+</defs>
+</svg>
