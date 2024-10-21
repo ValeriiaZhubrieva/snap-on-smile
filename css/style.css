@@ -99,6 +99,9 @@ h6 {
   font-weight: inherit;
   font-size: inherit
 }
+body {
+  background: var(--main-01)
+}
 .lock body {
   overflow: hidden;
   touch-action: none;
@@ -109,8 +112,7 @@ h6 {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  background: url(../img/desktop-bg.svg) top center/cover no-repeat
+  overflow: hidden
 }
 @supports (overflow:clip) {
   .wrapper {
@@ -317,7 +319,19 @@ h6 {
   display: grid;
   align-items: start;
   grid-template-columns: 1.1245fr 1fr;
-  grid-template-rows: repeat(3,auto)
+  grid-template-rows: repeat(3,auto);
+  position: relative;
+  z-index: 2
+}
+.hero__body::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 51.6875rem;
+  height: 41.25rem;
+  z-index: -1;
+  background: url(../img/hero-bg.svg) top right/827px auto no-repeat
 }
 .hero__head {
   padding-top: 4.75rem;
@@ -437,7 +451,22 @@ h6 {
   text-align: center
 }
 .innovation {
-  padding: 2.375rem 0 6.25rem 0
+  padding: 2.375rem 0 6.25rem 0;
+  position: relative;
+  z-index: 2
+}
+.innovation::before {
+  content: "";
+  position: absolute;
+  top: 2.375rem;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  z-index: -1;
+  border-radius: 50%;
+  width: 100.25rem;
+  height: 100.25rem;
+  background-color: var(--secondary-02)
 }
 .innovation__title {
   margin-bottom: 2.875rem
@@ -504,7 +533,9 @@ h6 {
   line-height: 120%
 }
 .aboutus {
-  padding: 2.375rem 0 6.25rem 0
+  padding: 2.375rem 0 6.25rem 0;
+  position: relative;
+  z-index: 2
 }
 .aboutus__title {
   margin-bottom: 2.875rem
@@ -544,7 +575,22 @@ h6 {
   object-fit: cover
 }
 .video-block {
-  padding: 2.375rem 0 6.25rem 0
+  padding: 2.375rem 0 6.25rem 0;
+  position: relative;
+  z-index: 2
+}
+.video-block__container {
+  position: relative
+}
+.video-block__container::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 11.4375rem;
+  z-index: -1;
+  width: 7.5625rem;
+  height: 6.1875rem;
+  background: url(../img/video-bg.svg) center/contain no-repeat
 }
 .video-block__title {
   margin-bottom: 2.875rem
@@ -610,7 +656,22 @@ h6 {
   margin: 0 auto
 }
 .results {
-  padding: 2.375rem 0 4.375rem 0
+  padding: 2.375rem 0 4.375rem 0;
+  position: relative;
+  z-index: 2
+}
+.results__container {
+  position: relative
+}
+.results__container::before {
+  content: "";
+  position: absolute;
+  top: -.625rem;
+  left: -10.875rem;
+  z-index: -1;
+  width: 43.125rem;
+  height: 43.125rem;
+  background: url(../img/results/results-bg.svg) center/contain no-repeat
 }
 .results__title {
   margin-bottom: .375rem
@@ -641,7 +702,22 @@ h6 {
   gap: .75rem
 }
 .reviews {
-  padding: 2.375rem 0 6.25rem 0
+  padding: 2.375rem 0 6.25rem 0;
+  position: relative;
+  z-index: 2
+}
+.reviews__container {
+  position: relative
+}
+.reviews__container::before {
+  content: "";
+  position: absolute;
+  top: -2.375rem;
+  right: -5.1875rem;
+  z-index: -1;
+  width: 69.625rem;
+  height: 69.8125rem;
+  background: url(../img/reviews/reviews-bg.svg) center/contain no-repeat
 }
 .reviews__title {
   margin-bottom: 2.875rem
@@ -721,7 +797,9 @@ h6 {
   object-fit: cover
 }
 .howtoorder {
-  padding: 2.375rem 0 6.25rem 0
+  padding: 2.375rem 0 6.25rem 0;
+  position: relative;
+  z-index: 2
 }
 .howtoorder__title {
   margin-bottom: 2.875rem
@@ -766,7 +844,32 @@ h6 {
   line-height: 120%
 }
 .contacts {
-  padding: 2.375rem 0 6.25rem 0
+  padding: 2.375rem 0 6.25rem 0;
+  position: relative;
+  z-index: 2
+}
+.contacts__container {
+  position: relative
+}
+.contacts__container::before {
+  content: "";
+  position: absolute;
+  top: -2.375rem;
+  left: -15.875rem;
+  z-index: -1;
+  width: 31.75rem;
+  height: 31.75rem;
+  background: url(../img/contacts/circle-1.svg) center/contain no-repeat
+}
+.contacts__container::after {
+  content: "";
+  position: absolute;
+  top: -6.875rem;
+  right: -2.3125rem;
+  z-index: -1;
+  width: 51.3125rem;
+  height: 48.875rem;
+  background: url(../img/contacts/circle-2.svg) center/contain no-repeat
 }
 .contacts__title {
   margin-bottom: 2.875rem
@@ -1007,6 +1110,9 @@ h6 {
   .hero__body {
     grid-template-columns: repeat(2,1fr)
   }
+  .hero__body::before {
+    display: none
+  }
   .hero__head {
     padding-top: 1.25rem
   }
@@ -1202,6 +1308,15 @@ h6 {
   .innovation {
     padding: 3.125rem 0 1.125rem 0
   }
+  .innovation::before {
+    top: 8.25rem;
+    left: 8.25rem;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    width: 26.125rem;
+    height: 26.125rem;
+    background-color: var(--secondary-03)
+  }
   .innovation__title {
     margin-bottom: 1.875rem
   }
@@ -1258,6 +1373,25 @@ h6 {
   .contacts {
     padding: 3.125rem 0 1.125rem 0
   }
+  .contacts__container::before {
+    top: auto;
+    bottom: 14.8125rem;
+    left: -.3125rem;
+    width: 7.5625rem;
+    height: 7.5625rem;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    background: url(../img/video-bg.svg) center/contain no-repeat
+  }
+  .contacts__container::after {
+    top: 1.5625rem;
+    right: -2.625rem;
+    width: 7.5625rem;
+    height: 7.5625rem;
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+    background: url(../img/video-bg.svg) center/contain no-repeat
+  }
   .contacts__title {
     margin-bottom: 1rem
   }
@@ -1286,12 +1420,24 @@ h6 {
     grid-template-rows: auto;
     justify-items: center
   }
+  .hero__body::before {
+    display: block;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    width: calc(100% + 2rem);
+    height: 100%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    background: url(../img/hero-bg-mob.svg) bottom center/100% 90% no-repeat
+  }
   .hero__head {
     text-align: center;
     order: 0
   }
   .hero__img {
-    margin-bottom: .375rem;
+    margin: 0 1rem .375rem 1rem;
     order: 1
   }
   .hero__info {
@@ -1346,9 +1492,6 @@ h6 {
   }
 }
 @media (max-width:29.99875em) {
-  .wrapper {
-    background: url(../img/mob-bg.svg) top center/cover no-repeat
-  }
   .title {
     font-size: 2rem
   }
@@ -1366,6 +1509,9 @@ h6 {
   }
   .footer__logo {
     max-width: 3.5rem
+  }
+  .hero__body::before {
+    background: url(../img/hero-bg-mob.svg) bottom center/contain no-repeat
   }
   .hero__head {
     margin-bottom: .625rem
@@ -1410,6 +1556,15 @@ h6 {
   .aboutus__img {
     margin: 0 2.125rem
   }
+  .video-block__container::before {
+    top: auto;
+    bottom: 1.8125rem;
+    left: -1.0625rem;
+    width: 7.5625rem;
+    height: 7.5625rem;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg)
+  }
   .video-block__title {
     margin-bottom: 1rem
   }
@@ -1423,11 +1578,20 @@ h6 {
     max-width: 15.625rem;
     margin: 0 auto .5rem auto
   }
+  .results__container::before {
+    top: calc(100% + 1.875rem);
+    left: -16.4375rem;
+    width: 27.5625rem;
+    height: 27.5625rem
+  }
   .results__text {
     font-size: 1rem
   }
   .results__navigation {
     padding-top: .625rem
+  }
+  .reviews__container::before {
+    display: none
   }
   .reviews__body {
     margin: 0 -.625rem
@@ -1441,6 +1605,16 @@ h6 {
   .reviews__slide-img {
     width: 3.375rem;
     height: 3.375rem
+  }
+  .howtoorder::before {
+    content: "";
+    position: absolute;
+    top: 5.625rem;
+    right: 0;
+    z-index: -1;
+    width: 23.3125rem;
+    height: 41.6875rem;
+    background: url(../img/howtoorder-bg.svg) center/contain no-repeat
   }
   .contacts__title br {
     display: none

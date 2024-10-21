@@ -4209,6 +4209,7 @@ function initSliders() {
                 slidesPerView: 2,
                 spaceBetween: 28,
                 speed: 800,
+                loop: true,
                 pagination: {
                     el: swiperPagination,
                     clickable: true,
